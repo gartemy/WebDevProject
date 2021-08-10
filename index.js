@@ -1,3 +1,4 @@
+// Burger Menu script 
 $(document).ready(() => {
   $(".header__menu").click(function () {
     $(".header").toggleClass("active");
@@ -9,21 +10,20 @@ $(document).ready(() => {
     });
   });
 
-  $(
-    ".web-project__title, .web-project__text, .web-project__buttons, .web-project__arrow"
-  )
-    .hide()
-    .slideToggle(1500);
+  $(".web-project__title, .web-project__text, .web-project__buttons, .web-project__arrow").hide().slideToggle(1500);
+  
 });
 
+// Smooth scrolling to the anchor
 const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
-    const blockID = anchor.getAttribute("href").substr(1);
+    const blockID = anchor.getAttribute("href").substr(1); // Get the name of the anchor 
 
+    // If the link has an anchor that apply method scrollIntoView for smooth scrolling
     if (blockID !== "") {
       document.getElementById(blockID).scrollIntoView({
         behavior: "smooth",
@@ -33,6 +33,7 @@ for (let anchor of anchors) {
   });
 }
 
+// Simple carousel script
 let slideIndex = 1;
 
 const currentSlide = (n) => {
