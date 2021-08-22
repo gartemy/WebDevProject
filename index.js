@@ -52,8 +52,9 @@ for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
 
-    const blockID = anchor.getAttribute('href').substr(1);
+    const blockID = anchor.getAttribute('href').substr(1); // Get the name of the anchor
 
+    // If the link has an anchor that apply method scrollIntoView for smooth scrolling
     if (blockID !== '') {
       document.getElementById(blockID).scrollIntoView({
         behavior: 'smooth',
