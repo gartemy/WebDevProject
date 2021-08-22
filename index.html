@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Web Development Project</title>
   </head>
   <body>
-    <header class="header">
+
+    <header class="header" id="header">
       <div class="wrapper">
         <nav class="header__navbar">
           <a href="#" class="header__logo">
@@ -18,15 +26,12 @@
             <div class="hamburger"></div>
           </div>
           <ul class="header__navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Servicing</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact us</a></li>
-            <li>
-              <a href="#"><img src="images/nav-find.png" alt="" /></a>
-            </li>
+            <li><a href="#" class="header__navigation-link">Home</a></li>
+            <li><a href="#about" class="header__navigation-link">About</a></li>
+            <li><a href="#services" class="header__navigation-link">Servicing</a></li>
+            <li><a href="#portfolio" class="header__navigation-link">Portfolio</a></li>
+            <li><a href="#blog" class="header__navigation-link">Blog</a></li>
+            <li><a href="#contact" class="header__navigation-link">Contact us</a></li>
           </ul>
         </nav>
       </div>
@@ -49,6 +54,10 @@
         </div>
       </div>
     </section>
+
+    <a href="#header" class="arrow-up">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
 
     <section class="about-us" id="about">
       <div class="wrapper">
@@ -790,12 +799,7 @@
         </div>
       </div>
     </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-      crossorigin="anonymous"
-    ></script>
+    
     <script src="index.js"></script>
   </body>
 </html>
